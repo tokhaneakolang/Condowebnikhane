@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from '@radix-ui/react-icons'
+import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +36,7 @@ export function Header() {
           className="md:hidden p-2 hover:bg-card-bg rounded-lg"
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <Cross1Icon width={24} height={24} /> : <HamburgerMenuIcon width={24} height={24} />}
         </button>
 
         {/* Mobile Menu */}

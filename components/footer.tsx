@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, MapPin, Phone } from '@radix-ui/react-icons'
+import { EnvelopeClosedIcon, LocationIcon, MobileIcon } from '@radix-ui/react-icons'
 
 export function Footer() {
   return (
@@ -40,19 +40,19 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <div className="flex flex-col gap-3 text-gray-400">
               <div className="flex items-center gap-2">
-                <Mail size={18} className="text-accent-warm" />
+                <EnvelopeClosedIcon width={18} height={18} className="text-accent-warm" />
                 <a href="mailto:info@condowebnikhane.com" className="hover:text-accent-warm transition-colors">
                   info@condowebnikhane.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={18} className="text-accent-warm" />
+                <MobileIcon width={18} height={18} className="text-accent-warm" />
                 <a href="tel:+1234567890" className="hover:text-accent-warm transition-colors">
                   +1 (234) 567-890
                 </a>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin size={18} className="text-accent-warm flex-shrink-0 mt-0.5" />
+                <LocationIcon width={18} height={18} className="text-accent-warm flex-shrink-0 mt-0.5" />
                 <span>123 Development Street, City, Country 12345</span>
               </div>
             </div>
