@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: system-ui, -apple-system, sans-serif;
+    --font-serif: ui-serif, Georgia, serif;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-balance;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-serif font-bold;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-serif font-bold;
+  }
+
+  .button-primary {
+    @apply bg-accent-warm hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors;
+  }
+
+  .button-secondary {
+    @apply border-2 border-accent-warm text-accent-warm hover:bg-accent-warm hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors;
+  }
+}
+
+* {
+  @apply transition-colors;
+}
